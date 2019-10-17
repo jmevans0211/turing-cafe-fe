@@ -1,0 +1,15 @@
+form {
+  height: 25px;
+  margin-bottom: 50px;
+}
+
+input, button {
+  margin: 0 15px 20px 15px;
+  height: 100%;
+  width: 150px
+}
+
+button {
+  background-color: teal;
+  color: white;
+}
