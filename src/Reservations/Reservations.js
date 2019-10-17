@@ -1,9 +1,9 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
+import './Reservations.css';
 import Card from '../Card/Card';
 
 const Reservations = props => {
-  console.log(props.reservations)
   const reservedTables = props.reservations.map(reserved => {
     return (<Card 
       id = {reserved.id}
@@ -15,7 +15,7 @@ const Reservations = props => {
     />)
   })
   return (
-    <main>
+    <main className="reservations">
       {reservedTables}
     </main>
   )
