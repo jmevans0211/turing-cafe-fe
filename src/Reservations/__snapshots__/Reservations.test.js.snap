@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reservations should match the snapshot 1`] = `
+<main
+  className="reservations"
+>
+  <Card
+    date="8/8"
+    id={18907224}
+    name="Christie"
+    number={3}
+    time="7:00"
+  />
+</main>
+`;
