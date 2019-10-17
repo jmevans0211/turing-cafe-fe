@@ -23,10 +23,8 @@ class App extends Component {
   addReservation(newReservation){
     postReservation(newReservation)
       .then(reservations => this.setState({ reservations: [...this.state.reservations, newReservation] }))
-      // .then(reservations => console.log(reservations))
       .catch(error => error)
   }
-  // this.setState({ ideas: [...this.state.ideas, newIdea] })
 
   render() {
     return (
