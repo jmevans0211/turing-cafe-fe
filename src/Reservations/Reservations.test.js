@@ -3,8 +3,7 @@ import { shallow } from 'enzyme'
 import Reservations from './Reservations';
 
 describe('Reservations', () => {
-  let wrapper
-  // const mockFn = jest.fn();
+  let wrapper;
 
   beforeEach(() => {
     wrapper = shallow(<Reservations reservations= {
