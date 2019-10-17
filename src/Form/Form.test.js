@@ -40,15 +40,29 @@ describe('Form', () => {
     };
     const expected = '10/31';
   
-    // Expectation
     expect(wrapper.state('date')).toEqual('');
 
-    // Execution
     wrapper.instance().handleChange(mockEvent);
   
-    // Expectation
     expect(wrapper.state('date')).toEqual(expected);
   });
+
+  it('should update date when handleChange is being called', () => {
+    const mockEvent = { 
+      target: { 
+        name: 'time', 
+        value: '3:30'
+      }
+    };
+    const expected = '3:30';
+  
+    expect(wrapper.state('time')).toEqual('');
+
+    wrapper.instance().handleChange(mockEvent);
+  
+    expect(wrapper.state('time')).toEqual(expected);
+  });
+
 });
 
 
