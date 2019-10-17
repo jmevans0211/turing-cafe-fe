@@ -4,10 +4,11 @@ class Form extends Component {
   constructor() {
     super();
     this.state = {
-      customer: '',
+      id: Date.now(),
+      name: '',
       date: '',
       time: '',
-      guests: ''
+      number: 0
     }
   }
 
@@ -23,10 +24,10 @@ class Form extends Component {
   render() {
     return (
       <form>
-        <input placeholder="Name" type="text" name="customer" onChange={this.handleChange}/>
+        <input placeholder="Name" type="text" name="name" onChange={this.handleChange}/>
         <input placeholder="Date" type="text" name="date" onChange={this.handleChange}/>
         <input placeholder="Time" type="text" name="time" onChange={this.handleChange}/>
-        <input placeholder="Number of Guests" type="number" name="guests" onChange={this.handleChange}/>
+        <input placeholder="Number of Guests" type="number" name="number" onChange={this.handleChange}/>
         <button onClick={this.handleSubmit}>Make Reservation</button>
       </form>
     )
