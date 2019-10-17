@@ -17,7 +17,7 @@ class Form extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
-console.log('in handle submit')
+    this.props.addReservation(this.state)
   }
 
   render() {
