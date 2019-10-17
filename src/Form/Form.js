@@ -15,6 +15,11 @@ class Form extends Component {
     this.setState({ [e.target.name]: e.target.value})
      }
 
+  handleSubmit = e => {
+    e.preventDefault()
+console.log('in handle submit')
+  }
+
   render() {
     return (
       <form>
@@ -22,7 +27,7 @@ class Form extends Component {
         <input placeholder="Date" type="text" name="date" onChange={this.handleChange}/>
         <input placeholder="Time" type="text" name="time" onChange={this.handleChange}/>
         <input placeholder="Number of Guests" type="number" name="guests" onChange={this.handleChange}/>
-        <button>Make Reservation</button>
+        <button onClick={this.handleSubmit}>Make Reservation</button>
       </form>
     )
   }

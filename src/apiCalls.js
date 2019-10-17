@@ -7,3 +7,15 @@ export const getReservations = () => {
     return response.json()
     })
 }
+
+export const postReservation = reservation => {
+  const options = {
+    method: 'POST',
+    body: JSON.stringify(reservation),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  };
+  return fetch('http://localhost:3001/api/v1/reservations', options)
+  .then(response => response.json())
+}
