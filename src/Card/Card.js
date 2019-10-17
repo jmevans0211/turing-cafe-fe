@@ -7,7 +7,7 @@ const Card = props => {
       <h4>{props.name}</h4>
       <p>{props.date}</p>
       <p>{props.time}</p>
-      <p>Number of Guests: {props.num}</p>
+      <p>Number of Guests: {props.number}</p>
     </div>
   )
 

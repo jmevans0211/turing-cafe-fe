@@ -2,4 +2,5 @@
   background-color: white;
   border: 1px teal solid;
   color: teal;
+  min-width: 200px;
 }

@@ -11,7 +11,7 @@ const Reservations = props => {
       name = {reserved.name}
       date = {reserved.date}
       time = {reserved.time}
-      num = {reserved.num}
+      number = {reserved.number}
     />)
   })
   return (

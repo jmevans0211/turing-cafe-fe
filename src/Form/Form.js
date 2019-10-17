@@ -16,13 +16,13 @@ class Form extends Component {
      }
 
   render() {
-    console.log(this.state.date)
     return (
       <form>
         <input placeholder="Name" type="text" name="customer" onChange={this.handleChange}/>
         <input placeholder="Date" type="text" name="date" onChange={this.handleChange}/>
         <input placeholder="Time" type="text" name="time" onChange={this.handleChange}/>
         <input placeholder="Number of Guests" type="number" name="guests" onChange={this.handleChange}/>
+        <button>Make Reservation</button>
       </form>
     )
   }
