@@ -63,6 +63,16 @@ describe('Form', () => {
     expect(wrapper.state('time')).toEqual(expected);
   });
 
+  it('should call the addReservation prop when button is clicked and handleSubmit is invoked', () => { 
+    const mockEvent = { preventDefault: jest.fn() };
+    const mockAddReservation = jest.fn()
+    wrapper.instance().addReservation = jest.fn();
+    wrapper.instance().handleChange(mockEvent);
+    
+    expect(mockAddReservation).toHaveBeenCalled();
+    expect(wrapper.instance().addReservation).toHaveBeenCalled();
+  });
+
 });
 
 
